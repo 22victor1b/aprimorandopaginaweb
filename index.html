@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Tech</title>
-      <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,10 +20,7 @@
     <main>
 
         <article>
-            <img
-                src="images.jpeg"
-                alt="Logotipo do blog de tecnologia e educação"
-            >
+            <img src="images.jpeg" alt="Logotipo do blog de tecnologia e educação">
 
             <div>
                 <h2>Meu primeiro post</h2>
@@ -48,10 +45,7 @@
         </article>
 
         <article>
-            <img
-                src="images.jpeg"
-                alt="Logotipo do blog de tecnologia e educação"
-            >
+            <img src="images.jpeg" alt="Logotipo do blog de tecnologia e educação">
 
             <div>
                 <h2>Meu segundo post</h2>
@@ -77,33 +71,6 @@
 
     </main>
 
-    <script>
-        const botoes = document.querySelectorAll(".botao-like");
-
-        botoes.forEach(function (botao) {
-
-            let curtiu = false;
-
-            botao.addEventListener("click", function () {
-
-                const texto = botao.querySelector("span");
-                let quantidade = Number(texto.textContent);
-
-                if (!curtiu) {
-                    quantidade++;
-                    curtiu = true;
-                    botao.classList.add("curtiu");
-                } else {
-                    quantidade--;
-                    curtiu = false;
-                    botao.classList.remove("curtiu");
-                }
-
-                texto.textContent = quantidade;
-            });
-
-        });
-    </script>
-
 </body>
+
 </html>
